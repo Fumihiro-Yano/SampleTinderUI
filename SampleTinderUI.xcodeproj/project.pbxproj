@@ -9,11 +9,13 @@
 /* Begin PBXBuildFile section */
 		E72D33591CF1FC9000BCD805 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E72D33581CF1FC9000BCD805 /* AppDelegate.swift */; };
 		E72D335B1CF1FC9000BCD805 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E72D335A1CF1FC9000BCD805 /* ViewController.swift */; };
-		E72D335E1CF1FC9000BCD805 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E72D335C1CF1FC9000BCD805 /* Main.storyboard */; };
 		E72D33601CF1FC9000BCD805 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E72D335F1CF1FC9000BCD805 /* Assets.xcassets */; };
 		E72D33631CF1FC9000BCD805 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E72D33611CF1FC9000BCD805 /* LaunchScreen.storyboard */; };
 		E72D336E1CF1FC9100BCD805 /* SampleTinderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E72D336D1CF1FC9100BCD805 /* SampleTinderUITests.swift */; };
 		E72D33791CF1FC9100BCD805 /* SampleTinderUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E72D33781CF1FC9100BCD805 /* SampleTinderUIUITests.swift */; };
+		E72D33871CF1FD1400BCD805 /* DraggableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E72D33861CF1FD1400BCD805 /* DraggableView.swift */; settings = {ASSET_TAGS = (); }; };
+		E72D33891CF1FD5D00BCD805 /* DraggableViewBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = E72D33881CF1FD5D00BCD805 /* DraggableViewBackground.swift */; settings = {ASSET_TAGS = (); }; };
+		E72D338B1CF1FD8500BCD805 /* OverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E72D338A1CF1FD8500BCD805 /* OverlayView.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +39,6 @@
 		E72D33551CF1FC9000BCD805 /* SampleTinderUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleTinderUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E72D33581CF1FC9000BCD805 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E72D335A1CF1FC9000BCD805 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		E72D335D1CF1FC9000BCD805 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E72D335F1CF1FC9000BCD805 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E72D33621CF1FC9000BCD805 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E72D33641CF1FC9000BCD805 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -47,6 +48,9 @@
 		E72D33741CF1FC9100BCD805 /* SampleTinderUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SampleTinderUIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E72D33781CF1FC9100BCD805 /* SampleTinderUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleTinderUIUITests.swift; sourceTree = "<group>"; };
 		E72D337A1CF1FC9100BCD805 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E72D33861CF1FD1400BCD805 /* DraggableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DraggableView.swift; sourceTree = "<group>"; };
+		E72D33881CF1FD5D00BCD805 /* DraggableViewBackground.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DraggableViewBackground.swift; sourceTree = "<group>"; };
+		E72D338A1CF1FD8500BCD805 /* OverlayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverlayView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,8 +102,10 @@
 			isa = PBXGroup;
 			children = (
 				E72D33581CF1FC9000BCD805 /* AppDelegate.swift */,
+				E72D33861CF1FD1400BCD805 /* DraggableView.swift */,
+				E72D33881CF1FD5D00BCD805 /* DraggableViewBackground.swift */,
+				E72D338A1CF1FD8500BCD805 /* OverlayView.swift */,
 				E72D335A1CF1FC9000BCD805 /* ViewController.swift */,
-				E72D335C1CF1FC9000BCD805 /* Main.storyboard */,
 				E72D335F1CF1FC9000BCD805 /* Assets.xcassets */,
 				E72D33611CF1FC9000BCD805 /* LaunchScreen.storyboard */,
 				E72D33641CF1FC9000BCD805 /* Info.plist */,
@@ -233,7 +239,6 @@
 			files = (
 				E72D33631CF1FC9000BCD805 /* LaunchScreen.storyboard in Resources */,
 				E72D33601CF1FC9000BCD805 /* Assets.xcassets in Resources */,
-				E72D335E1CF1FC9000BCD805 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,8 +263,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E72D33891CF1FD5D00BCD805 /* DraggableViewBackground.swift in Sources */,
+				E72D33871CF1FD1400BCD805 /* DraggableView.swift in Sources */,
 				E72D335B1CF1FC9000BCD805 /* ViewController.swift in Sources */,
 				E72D33591CF1FC9000BCD805 /* AppDelegate.swift in Sources */,
+				E72D338B1CF1FD8500BCD805 /* OverlayView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,14 +303,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		E72D335C1CF1FC9000BCD805 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E72D335D1CF1FC9000BCD805 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		E72D33611CF1FC9000BCD805 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
