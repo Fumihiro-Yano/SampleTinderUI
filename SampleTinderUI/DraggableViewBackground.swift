@@ -86,6 +86,7 @@ class DraggableViewBackground: UIView, DraggableViewDelegate{
             
             for i in 0..<loadedCards.count {
                 if (i > 0) {
+                    //loadedCardsを上に重ねて置く。
                     self.insertSubview((loadedCards.objectAtIndex(i) as! UIView), belowSubview: (loadedCards.objectAtIndex(i-1) as! UIView))
                 } else {
                     self.addSubview(loadedCards.objectAtIndex(i) as! UIView)

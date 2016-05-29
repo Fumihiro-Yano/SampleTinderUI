@@ -49,6 +49,7 @@ class DraggableView: UIView {
         
         self.backgroundColor = UIColor.blackColor()
         
+        //pan(drag)されたことを認識する
         panGestureRecognizer = UIPanGestureRecognizer(target: self, action: Selector("beingDragged:"))
         self.addGestureRecognizer(panGestureRecognizer!)
         self.addSubview(information)
@@ -67,18 +68,22 @@ class DraggableView: UIView {
     }
     
     func beingDragged(gestureRecognizer: UIPanGestureRecognizer) {
+        
         let xFromCenter = gestureRecognizer.translationInView(self).x
         let yFromCenter = gestureRecognizer.translationInView(self).y
         
         switch (gestureRecognizer.state) {
         case UIGestureRecognizerState.Began:
+            //self.centerでframeのcenter(center is center of frame. animatable)
             self.originalPoint = self.center;
             break;
         case UIGestureRecognizerState.Changed:
             let rotationStrength: CGFloat = min(xFromCenter / CGFloat(ROTATION_STRENGTH), CGFloat(ROTATION_MAX))
             let rotationAngel: CGFloat = CGFloat(ROTATION_ANGLE) * rotationStrength
             let scale: CGFloat = max(1 - CGFloat(fabsf(Float(rotationStrength))) / CGFloat(SCALE_STRENGTH), CGFloat(SCALE_MAX))
+            //ドラック中の中心を変更する。
             self.center = CGPointMake(self.originalPoint.x + xFromCenter, self.originalPoint.y + yFromCenter)
+            //カードが少し回転する。
             let transform: CGAffineTransform = CGAffineTransformMakeRotation(rotationAngel)
             let scaleTransform: CGAffineTransform = CGAffineTransformScale(transform, scale, scale)
             self.transform = scaleTransform

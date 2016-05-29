@@ -446,6 +446,7 @@
 		E72D33841CF1FC9100BCD805 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"CODE_SIGN_ENTITLEMENTS[sdk=iphoneos9.0]" = "";
 				INFOPLIST_FILE = SampleTinderUIUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = glooob.SampleTinderUIUITests;
